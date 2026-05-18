@@ -9,7 +9,7 @@ function useFetch(searchStr) {
 
     useEffect(() => {
         if (searchStr !== '') {
-            fetch(`${default_movie_search_url}?api_key=${api_key}&query=${searchWithPlus}`)
+            fetch(`${default_movie_search_url}?api_key=${api_key}&query=${searchWithPlus}&language=it-IT`)
                 .then(resp => resp.json())
                 .then(json => setMovieList(json.results))
         } else {
