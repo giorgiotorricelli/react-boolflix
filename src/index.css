@@ -5,3 +5,23 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.cards-wrapper {
+  overflow-x: auto;
+  max-height:fit-content;
+  
+}
+
+.poster-img {
+  width: 100%;
+  aspect-ratio: 1/1.5;
+  object-fit: cover;       
+  object-position:top;
+}
+
+.poster-without-img {
+  width: 100%;
+  aspect-ratio: 1/1.5;
+  color: white;
+  background-image: linear-gradient(to bottom, rgb(55, 55, 55), black);
+}
