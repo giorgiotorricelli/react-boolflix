@@ -4,6 +4,7 @@ import MainLayout from './layouts/MainLayout';
 import { SearchListProvider } from './contexts/SearchListContext';
 
 import Home from './pages/Home';
+import Genres from './pages/Genres';
 
 const testValue = import.meta.env.VITE_test_value;
 
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route element={<MainLayout />}>
             <Route path='/home' element={<Home />} />
+            <Route path='/genres' element={<Genres />} />
           </Route>
 
         </Routes>

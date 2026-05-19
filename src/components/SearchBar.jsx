@@ -31,6 +31,7 @@ function SearchBar() {
         <form onSubmit={submitHandler}>
             <input type="text" name="search-by-name" id="search-by-name" value={searchInputValue} onChange={changeHandler} />
             <button type="submit" className="btn btn-primary">Search</button>
+            <label htmlFor="country">Select country</label>
             <select name="country" id="country" onChange={changeHandler}>
                 {countries.map(country => {
                     return <option value={`${country.language_code}-${country.country_code}`} key={country.country}>{country.country}</option>
